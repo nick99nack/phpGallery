@@ -36,3 +36,4 @@ $columns    = 3;
 `$thumbWidth` is the width of the thumbnails, in px.
 
 `$columns` is the number of columns the resulting table of thumbnails will have.
+
