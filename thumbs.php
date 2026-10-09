@@ -24,7 +24,8 @@ function makeThumb($src, $dest, $width) {
     imagedestroy($img);
     if (!$thumb) return false;
 
-    imageinterlace($thumb, true);
+    //we like progressive loading jpegs
+    imageinterlace($thumb, true); //change "true" to 1 for php versions older than 8.0
 
     $ok = imagejpeg($thumb, $dest, 82);
     imagedestroy($thumb);
